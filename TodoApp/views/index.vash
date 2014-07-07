@@ -1,4 +1,6 @@
-﻿@html.extend('layout', function(model) {
+﻿<!doctype html>
+
+@html.extend('layout', function(model) {
 	@html.block("body", function(model) {
 
         @if (model.error){

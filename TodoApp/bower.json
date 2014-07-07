@@ -1,0 +1,25 @@
+{
+  "name": "TodoApp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shermanjoshua/NodeTodo",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "Joshua Sherman"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "underscore": "~1.6.0"
+  }
+}
