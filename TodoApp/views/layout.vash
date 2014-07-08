@@ -4,6 +4,7 @@
     <title>@model.title</title>
     <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    @html.block("head")
     <link href="/css/site.css" rel="stylesheet" />
 </head>
 <body>
@@ -39,5 +40,8 @@
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="/lib/underscore/underscore.js"></script>
+    <script src="/lib/angular/angualar.min.js"></script>
+    <script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    @html.block("scripts")
 </body>
 </html>
