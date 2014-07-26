@@ -19,19 +19,19 @@
 }
 
 .todo-yellow {
-	background: url(../images/note-yellow.png) no-repeat;
+	background: url(../images/todo-yellow.png) no-repeat;
 }
 
 .todo-blue {
-	background: url(../images/note-blue.png) no-repeat;
+	background: url(../images/note-todo.png) no-repeat;
 }
 
 .todo-orange {
-	background: url(../images/note-orange.png) no-repeat;
+	background: url(../images/note-todo.png) no-repeat;
 }
 
 .todo-green {
-	background: url(../images/note-green.png) no-repeat;
+	background: url(../images/note-todo.png) no-repeat;
 }
 
 

@@ -1,21 +1,21 @@
 @html.extend('layout', function(model) {
-	
 	@html.block("scripts", function(model){
-		<script src="/js/notesView.js"></script>
+		<script src="/js/todosView.js"></script>
 	})
-	
+
 	@html.block("body", function(model) {
 
-<div ng-app="todosView">
-	<a href="/" class="btn btn-info">Back</a>
-	<div ng-controller="todosViewController">
+	<div ng-app="todosView">
+		<a href="/" class="btn btn-info">Back</a>
+		<div ng-controller="todosViewController"></div>
 		<div>
-			<div class="todo todo-yellow" ng-repeat="">
-				<div>This is a sample note</div>
-				<div class="todo-author"><small>-Joshua Sherman</small></div>
+			<div class="todo todo-yellow" ng-repeat="t in todos">
+				<div>{{ t.todo }}</div>
 			</div>
-		</div>
+
+
+		</div>	
 	</div>
-</div>
+
 	})
 })

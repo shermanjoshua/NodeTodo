@@ -24,7 +24,7 @@
             if (err) {
                 next(err);
             } else {
-                db.todos.findOne({ name: categoryName }, next);
+                next(db.todos.find({ name: categoryName }, next));
             }
         }); 
     };
