@@ -13,7 +13,7 @@
                     res.send(400, err);
                 } else {
                     res.set("Content-Type", "application/json");
-                    res.send(todos);
+                    res.send(todos.todos);
                 }
             });
         });

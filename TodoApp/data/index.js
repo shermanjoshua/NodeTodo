@@ -24,7 +24,7 @@
             if (err) {
                 next(err);
             } else {
-                next(db.todos.find({ name: categoryName }, next));
+                db.todos.findOne({ name: categoryName }, next);
             }
         }); 
     };
@@ -59,8 +59,7 @@
             }
         });
     };
-    
-    
+
     function seedDatabase() {
         database.getDb(function (err, db) {
             if (err) {

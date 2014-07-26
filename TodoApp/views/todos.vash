@@ -7,15 +7,11 @@
 
 	<div ng-app="todosView">
 		<a href="/" class="btn btn-info">Back</a>
-		<div ng-controller="todosViewController"></div>
-		<div>
-			<div class="todo todo-yellow" ng-repeat="t in todos">
-				<div>{{ t.todo }}</div>
+			<div ng-controller="todosViewController">
+				<div class="todo todo-yellow" ng-repeat="t in todos" ng-class="'todo-'" + t.color>
+					<div>{{t.todo}}</div>
 			</div>
-
-
-		</div>	
-	</div>
-
+		</div>
+	</div>		
 	})
 })
